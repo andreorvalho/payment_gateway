@@ -7,6 +7,7 @@ module PaymentGateway
 
       it 'returns a successful response' do
         get :index
+        expect(@controller.view_assigns["payments"]).to include(request)
         expect(response).to be_successful
       end
     end
