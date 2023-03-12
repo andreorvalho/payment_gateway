@@ -12,9 +12,7 @@
 
 ActiveRecord::Schema[7.0].define(version: 2023_03_11_171311) do
   create_table "payment_gateway_payment_requests", force: :cascade do |t|
-    t.string "customer_name", null: false
-    t.string "place_of_birth", null: false
-    t.date "date_of_birth", null: false
+    t.integer "customer_id", null: false
     t.decimal "amount", precision: 10, scale: 2, null: false
     t.datetime "timestamp", null: false
     t.datetime "created_at", null: false
