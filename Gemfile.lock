@@ -1,4 +1,11 @@
 PATH
+  remote: ../customer_data
+  specs:
+    customer_data (0.1.0)
+      bootsnap
+      rails (>= 7.0.4.2)
+
+PATH
   remote: .
   specs:
     payment_gateway (0.1.0)
@@ -184,6 +191,7 @@ PLATFORMS
   arm64-darwin-22
 
 DEPENDENCIES
+  customer_data!
   factory_bot_rails
   payment_gateway!
   rspec-rails
