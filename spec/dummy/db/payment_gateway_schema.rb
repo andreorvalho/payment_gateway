@@ -10,5 +10,13 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 0) do
+ActiveRecord::Schema[7.0].define(version: 2023_03_11_171311) do
+  create_table "payment_requests", force: :cascade do |t|
+    t.integer "customer_id", null: false
+    t.decimal "amount", precision: 10, scale: 2, null: false
+    t.datetime "timestamp", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
 end

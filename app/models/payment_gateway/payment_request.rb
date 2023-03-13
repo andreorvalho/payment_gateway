@@ -1,4 +1,5 @@
 module PaymentGateway
-  class PaymentRequest < ApplicationRecord
+  class PaymentRequest < PaymentGatewayRecord
+    self.table_name = "payment_requests"
   end
 end
