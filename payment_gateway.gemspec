@@ -5,13 +5,13 @@ Gem::Specification.new do |spec|
   spec.version     = PaymentGateway::VERSION
   spec.authors     = ["andre.orvalho"]
   spec.email       = ["andre.orvalho@gmail.com"]
-  spec.homepage    = "https://github.com/andreorvalho"
+  spec.homepage    = "https://github.com/andreorvalho/payment_gateway"
   spec.summary     = "Summary of Payment."
   spec.description = "Description of Payment."
 
   spec.metadata["homepage_uri"] = spec.homepage
-  spec.metadata["source_code_uri"] = "https://github.com/andreorvalho"
-  spec.metadata["changelog_uri"] = "https://github.com/andreorvalho"
+  spec.metadata["source_code_uri"] = "https://github.com/andreorvalho/payment_gateway"
+  spec.metadata["changelog_uri"] = "https://github.com/andreorvalho/payment_gateway"
 
   spec.files = Dir.chdir(File.expand_path(__dir__)) do
     Dir["{app,config,db,lib}/**/*", "MIT-LICENSE", "Rakefile", "README.md"]
